@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Error</title>
+</head>
+<body>
+  <h1>{{ message }}</h1>
+  {% if error.status %}
+    <p>Status: {{ error.status }}</p>
+  {% endif %}
+  {% if error.stack %}
+    <pre>{{ error.stack }}</pre>
+  {% endif %}
+</body>
+</html>
